@@ -1,0 +1,16 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.list{
+    padding:20px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+.para{
+    padding:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
