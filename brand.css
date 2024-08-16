@@ -3,6 +3,9 @@
     margin:0px;
     box-sizing: border-box;
 }
+.main{
+    position:relative;
+}
 .list{
     padding:20px;
     list-style: none;
@@ -13,18 +16,30 @@
     padding:30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+    color:#cdcdcd;
+    font-weight: bolder;
 }
 .brand{
     display:grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
 }
+.image{
+    background-image: url(girl.jpg);
+    height: 450px;
+    width: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
 .br{
+    position:absolute;
     margin-top: -50px;
     word-spacing: 25px;
     font-size: 130px;
     font-weight: bold;
     margin-left:200px;
+    color:red;
 }
 .svg{
     margin-left:30%;
@@ -44,9 +59,25 @@
     font-weight:bold;
 }
 .creation{
-    margin-top:15%;
+    margin-top:10%;
     margin-left:160px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-stretch: wider;
     font-weight: bold;
+}
+.universe{
+    color:red;
+}
+.video{
+    margin-top: 5%;
+    line-height: 100%;
+}
+.social{
+    color:#3f3f3f;
+}
+.design{
+    color:#cdcdcd;
+}
+.playbutton{
+    margin-top: 90px;
 }
