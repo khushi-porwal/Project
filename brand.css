@@ -20,5 +20,33 @@
     place-items: center;
 }
 .br{
-    
+    margin-top: -50px;
+    word-spacing: 25px;
+    font-size: 130px;
+    font-weight: bold;
+    margin-left:200px;
+}
+.svg{
+    margin-left:30%;
+}
+.marketing{
+    margin-top:40px;
+    margin-left:15%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 70px;
+}
+.take{
+    MARGIN-TOP:5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:160px;
+    font-weight:bold;
+}
+.creation{
+    margin-top:15%;
+    margin-left:160px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-stretch: wider;
+    font-weight: bold;
 }
