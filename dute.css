@@ -1,0 +1,123 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.content{
+    padding:30px;
+    color:white
+    /* display:flex;
+    justify-content: space-around;
+    row-gap: -10%; */
+}
+.list{
+    list-style: none;
+    color:white;
+    display:flex;
+    margin-top:-9%; 
+    /* word-spacing:5px; */
+    justify-content:space-evenly;
+}
+.studio{
+    color:white;
+    margin-left: 10%;
+}
+.japaner{
+    color:white;
+    padding:30px;
+    margin-left: 20%;
+}
+.images{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dute{
+    position:relative;
+    height:600px;
+    width:700px;
+}
+.cap{
+    height:400px;
+    width:300px;
+    margin-left: 5px;
+}
+.rocnation{
+    height:400px;
+    width:500px;
+    margin-left:5px;
+}
+.yellow{
+    height:300px;
+    width: 200px;
+    margin-left:708px;
+    margin-top: -190px;
+}
+.color{
+    height:300px;
+    width:600px;
+    margin-top: -190px;
+}
+.cream{
+    height: 300px;
+    width:250px;
+    margin-top: -105px;
+}
+.food{
+    height: 300px;
+    width:440px;
+    margin-top: -300px;
+}
+.give{
+    height:400px;
+    width:800px;
+    margin-left: 700px;
+    margin-top: -190px;
+
+}
+.brother{
+    height:200px;
+    width:490px;
+    margin-top:-4000%;
+}
+.start{
+    height:200px;
+    width:190px;
+    margin-left:4px;
+    margin-top:-2500%;
+}
+body{
+    background-color: black;
+}
+/* .tagline{
+    position:relative;
+    color:white;
+    pointer-events: none;
+    top:50%;
+    left:50%;
+    padding:10px;
+    border-radius:5px;
+    transform:translate(-50%,-50%);
+    transition:opacity 0.3s ease;
+} */
+/* .para{
+    font-size: 2px;
+    margin:20px;
+    visibility: hidden;
+    opacity:0;
+}
+
+.para:hover {
+    display: block; /* Shows the text on hover */
+    /* opacity:1;
+    visibility: visible;
+} */
+.paratag{
+    position: relative;
+    color:white;
+    
+}
+
