@@ -26,8 +26,9 @@
 }
 .image{
     background-image: url(girl.jpg);
-    height: 450px;
-    width: 450px;
+    margin-top: -20%;
+    height: 650px;
+    width: 650px;
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -53,7 +54,7 @@
     line-height: 70px;
 }
 .take{
-    MARGIN-TOP:5%;
+    margin-top:5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left:160px;
     font-weight:bold;
@@ -69,7 +70,7 @@
     color:red;
 }
 .video{
-    margin-top: 5%;
+    margin-top: 2%;
     line-height: 100%;
 }
 .social{
@@ -79,5 +80,11 @@
     color:#cdcdcd;
 }
 .playbutton{
-    margin-top: 90px;
+    margin-top: 30%;
+}
+.all{
+    position:absolute;
+    margin-left: -70%;
+    transform: rotate(-90deg);
+    margin-top: -20%;
 }

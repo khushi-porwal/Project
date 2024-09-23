@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        .phone{
+            height:600px;
+            width:600px;
+            margin-top: 60px;
+            margin-left: 500px;
+            position:relative;
+        }
+        .g-signin2{
+            padding:10px;
+            border-radius: 100px;
+            background-color:rgb(255,255,255);
+            color:white;
+            position:absolute;
+            margin-left: -370px;
+            margin-top: 300px;
+            font-family: Arial, sans-serif;
+        }
+        .signout{
+            position:absolute;
+            margin-top:390px;
+            margin-left:-330px;
+        }
+    </style>
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+    <div>
+        <img class="phone"src="phonesvg.png">
+        <button class="g-signin2" data-onsuccess="onSignIn">SIGN UP WITH GOOGLE</button>
+        <button class="signout" onclick="signOut()">Sign out</button>
+    </div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- JavaScript for handling the sign-in -->
+    <script>
+        function onSignIn(googleUser) {
+            // Get profile information from the GoogleUser object
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+
+            // Get the ID token to send to the backend
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log('ID Token: ' + id_token);
+
+            // You can send this ID token to your backend for further processing
+        }
+
+        // Optional: Add sign-out functionality
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+
+</body>
+</html>
